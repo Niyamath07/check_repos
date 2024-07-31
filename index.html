@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mohammed Niyamathullah</h1>
+        <p>Test Engineer | Cloud Engineer</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <section>
+            <h3>Phone</h3>
+            <p><a href="tel:+918122220178">+91 8122220178</a></p>
+        </section>
+        <section>
+            <h3>Email</h3>
+            <p><a href="mailto:niyamath1999@gmail.com">niyamath1999@gmail.com</a></p>
+        </section>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <p>
+            <a href="#" onclick="showImage('certification1.jpg')">ISTQB - Foundation Level Certificate in Software Testing</a><br>
+            <a href="#" onclick="showImage('certification2.jpg')">ISTQB - Agile Tester Foundation Extension Certificate</a><br>
+            <a href="#" onclick="showImage('certification3.jpg')">Microsoft Certified: Azure Fundamentals</a>
+        </p>
+    </section>
+
+    <section id="awards">
+        <h2>Awards</h2>
+        <p>Rise Award - Rookie of the Quarter, <b>Infosys Limited</b></p>
+        <div class="image">
+            <img src="images/RiseAward.jpeg" alt="Rise Award" class="award-image">
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="posts">
+            <article>
+                <header>
+                    <h2>Project 1</h2>
+                </header>
+                <a href="#" class="image fit">
+                    <img src="images/pic01.jpg" alt="Project 1">
+                </a>
+                <p>Description of Project 1.</p>
+            </article>
+            <article>
+                <header>
+                    <h2>Project 2</h2>
+                </header>
+                <a href="#" class="image fit">
+                    <img src="images/Skills.jpeg" alt="Project 2">
+                </a>
+                <p>Description of Project 2.</p>
+            </article>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <section>
+            <form method="post" action="#">
+                <div class="fields">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="3" required></textarea>
+                    </div>
+                </div>
+                <ul class="actions">
+                    <li><input type="submit" value="Send Message"></li>
+                </ul>
+            </form>
+        </section>
+    </footer>
+
+    <!-- Popup for Certification Images -->
+    <div id="popup" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <img class="popup-content" id="popup-image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
